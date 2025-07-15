@@ -1,0 +1,25 @@
+.box{
+    background-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px) 50px 50px;
+}
+
+#box-1{
+    grid-row: span 5;
+}
+
+#box-11, #box-12{
+    grid-column: span 3;
+}
+
+#box-6, #box-7, #box-9, #box-10{
+    background-color: tomato;
+}
